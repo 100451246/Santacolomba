@@ -172,6 +172,7 @@ header {
 .header-container {
     display: flex;
     flex-direction: column; /* Asegura que los elementos estén uno encima del otro */
+    flex-wrap: wrap;
     align-items: center; /* Centra los elementos horizontalmente */
     text-align: center; /* Centra el texto */
     gap: 10px; /* Espacio entre el logo y el título */
@@ -195,6 +196,7 @@ nav {
 @media (min-width: 1000px) {
     .header-container {
         flex-direction: row; /* Cambia a diseño horizontal en pantallas grandes */
+        flex-wrap: wrap;
         justify-content: center; /* Centra horizontalmente */
     }
 
