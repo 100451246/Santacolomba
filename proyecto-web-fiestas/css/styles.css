@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1c1c1c; /* Fondo oscuro */
+    color: #f4f4f9; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima para ocupar toda la pantalla */
+}
+
+header {
+    background: #333333; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4f4f9; /* Blanco para enlaces */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Verde brillante al pasar el ratón */
+}
+
+main {
+    padding: 20px;
+    flex: 1; /* Para empujar el footer hacia abajo */
+}
+
+h2, h3 {
+    color: #4CAF50; /* Verde brillante */
+}
+
+.dia {
+    margin-bottom: 20px;
+    background: #2c2c2c; /* Fondo oscuro para cada día */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dia ul {
+    padding-left: 20px;
+    list-style: disc;
+    color: #f4f4f9; /* Texto blanco */
+}
+
+footer {
+    background: #111111; /* Fondo negro */
+    color: #888888; /* Texto gris claro */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #4CAF50; /* Verde brillante para enlaces en el footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Enlace de "Ver Programa Completo" */
+.cta a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4CAF50; /* Fondo verde */
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cta a.btn:hover {
+    background: #45a049; /* Color verde más oscuro al pasar el ratón */
+}
+
+.compra {
+    margin-top: 20px;
+    padding: 10px;
+    background: #2c2c2c; /* Fondo oscuro */
+    border-left: 4px solid #4CAF50; /* Borde verde */
+    font-size: 1.1em;
+    color: #f4f4f9; /* Texto claro */
+}
+.bienvenida img {
+    max-width: 100%; /* Se ajusta al ancho del contenedor */
+    height: auto; /* Mantiene las proporciones */
+    margin-top: 20px; /* Espacio superior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para realzar */
+}
+.galeria {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: #2c2c2c; /* Fondo oscuro */
+    border-radius: 10px;
+}
+
+.galeria h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.galeria .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+.contador {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: #2c2c2c; /* Fondo oscuro */
+    color: #f4f4f9; /* Texto claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.contador h2 {
+    color: #4CAF50; /* Verde brillante */
+    margin-bottom: 10px;
+}
+
+#countdown {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff; /* Texto blanco */
+}
+header {
+    background: #333333; /* Fondo gris oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente el logo y el texto */
+    justify-content: center; /* Ajusta el posicionamiento horizontal */
+}
+
+.header-container .logo img {
+    width: 150px; /* Tamaño del logo */
+    position: absolute; /* Posiciona el logo de forma absoluta */
+    top: -20px; /* Pégalo a la parte superior del contenedor */
+    left: 0; /* Pégalo al borde izquierdo */
+}
+
+
+
+h1 {
+    font-size: 1.5em; /* Ajusta el tamaño del título */
+    margin: 0; /* Elimina márgenes para alinearlo mejor */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4f4f9; /* Blanco */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
