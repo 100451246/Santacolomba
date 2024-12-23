@@ -34,7 +34,24 @@
 
         <section class="contador">
             <h2>Falta para empezar a disfrutar las Fiestas</h2>
-            <div id="countdown">00d 00h 00m 00s</div>
+            <div id="countdown" class="countdown">
+                <div class="time-segment">
+                    <span id="days" class="number">00</span>
+                    <span class="label">Días</span>
+                </div>
+                <div class="time-segment">
+                    <span id="hours" class="number">00</span>
+                    <span class="label">Horas</span>
+                </div>
+                <div class="time-segment">
+                    <span id="minutes" class="number">00</span>
+                    <span class="label">Minutos</span>
+                </div>
+                <div class="time-segment">
+                    <span id="seconds" class="number">00</span>
+                    <span class="label">Segundos</span>
+                </div>
+            </div>
         </section>
 
         <section class="destacados">
@@ -73,19 +90,28 @@
 
     <script src="js/lightbox.js" defer></script> <!-- Script de Lightbox -->
     <script>
-        // JavaScript del contador
+        // JavaScript para el contador
         const countDownDate = new Date("August 8, 2025 00:00:00").getTime();
+    
         const x = setInterval(function () {
             const now = new Date().getTime();
             const distance = countDownDate - now;
+    
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    
+            // Actualizar números en el DOM
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+    
+            // Mostrar mensaje si el contador llega a cero
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "¡Las fiestas han comenzado!";
+                document.querySelector(".countdown").innerHTML = "¡Las fiestas han comenzado!";
             }
         }, 1000);
     </script>
