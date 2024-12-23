@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Fiestas de Santa Colomba</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/lightbox.css"> <!-- CSS de Lightbox -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/titulosinfondo.png" alt="Logo Santa Colomba">
+            </div>
+            <h1 id="Titulo">Fiestas de Santa Colomba de Sanabria 2024</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="active">Inicio</a></li>
+                <li><a href="programacion.html">Programación</a></li>
+                <li><a href="merchandising.html">Merchandising</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+    <main>
+        <section class="bienvenida">
+            <h2>¡Bienvenidos a las Fiestas!</h2>
+            <p>Disfruta de una semana llena de tradición, música y alegría en Santa Colomba de Sanabria. Vive momentos inolvidables con nosotros.</p>
+        </section>
+
+        <section class="contador">
+            <h2>Cuenta Regresiva para el Inicio de las Fiestas</h2>
+            <div id="countdown">00d 00h 00m 00s</div>
+        </section>
+
+        <section class="destacados">
+            <h2>Destacados</h2>
+            <ul>
+                <li><strong>Viernes 22 de agosto:</strong> Baile en el Campo amenizado por LA LÍNEA + Toro de Fuego.</li>
+                <li><strong>Sábado 23 de agosto:</strong> Baile en el Campo amenizado por SILDAVIA + Toro de Fuego.</li>
+            </ul>
+        </section>
+
+        <section class="galeria">
+            <h2>Galería de Fiestas de Otros Años</h2>
+            <div class="grid">
+                <a href="img/fiestas.png" data-lightbox="fiestas" data-title="Celebración en el escenario">
+                    <img src="img/fiestas.png" alt="Celebración en el escenario">
+                </a>
+                <a href="img/procesion.png" data-lightbox="fiestas" data-title="Procesión nocturna">
+                    <img src="img/procesion.png" alt="Procesión nocturna">
+                </a>
+                <a href="img/toro.jpg" data-lightbox="fiestas" data-title="Bailes tradicionales">
+                    <img src="img/toro.jpg" alt="Bailes tradicionales">
+                </a>
+                <a href="img/fiesta4.jpg" data-lightbox="fiestas" data-title="Ambiente festivo en la plaza">
+                    <img src="img/fiesta4_thumb.jpg" alt="Ambiente festivo en la plaza">
+                </a>
+            </div>
+        </section>
+
+        <section class="cta">
+            <a href="programacion.html" class="btn">Ver Programa Completo</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fiestas de Santa Colomba de Sanabria</p>
+    </footer>
+
+    <script src="js/lightbox.js" defer></script> <!-- Script de Lightbox -->
+    <script>
+        // JavaScript del contador
+        const countDownDate = new Date("August 8, 2025 00:00:00").getTime();
+        const x = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "¡Las fiestas han comenzado!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
+
+
+
+
+

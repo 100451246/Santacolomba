@@ -166,25 +166,56 @@ header {
     text-align: center;
 }
 
+
+
 .header-container {
     display: flex;
-    align-items: center; /* Centra verticalmente el logo y el texto */
-    justify-content: center; /* Ajusta el posicionamiento horizontal */
+    flex-direction: column; /* Asegura que los elementos estén uno encima del otro */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto */
+    gap: 10px; /* Espacio entre el logo y el título */
+    padding: 10px; /* Espaciado interno */
 }
 
-.header-container .logo img {
-    width: 150px; /* Tamaño del logo */
-    position: absolute; /* Posiciona el logo de forma absoluta */
-    top: -20px; /* Pégalo a la parte superior del contenedor */
-    left: 0; /* Pégalo al borde izquierdo */
+.logo img {
+    width: 80px; /* Tamaño del logo */
+    height: auto; /* Mantiene proporciones */
 }
-
-
 
 h1 {
-    font-size: 1.5em; /* Ajusta el tamaño del título */
-    margin: 0; /* Elimina márgenes para alinearlo mejor */
+    font-size: 1.2em; /* Ajusta el tamaño del título en móviles */
+    margin: 0;
 }
+
+nav {
+    margin-top: 10px; /* Añade espacio entre el título y el menú */
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row; /* Cambia a diseño horizontal en pantallas grandes */
+        justify-content: center; /* Centra horizontalmente */
+    }
+
+    .logo img {
+        width: 100px; /* Tamaño del logo para pantallas grandes */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Aumenta el tamaño del título en pantallas grandes */
+    }
+    .header-container .logo img {
+        width: 150px; /* Tamaño del logo */
+        position: absolute; /* Posiciona el logo de forma absoluta */
+        top: -20px; /* Pégalo a la parte superior del contenedor */
+        left: 0; /* Pégalo al borde izquierdo */
+    }
+}
+
+
+
+
+
 
 nav ul {
     list-style: none;
