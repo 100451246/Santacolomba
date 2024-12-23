@@ -192,7 +192,7 @@ nav {
     margin-top: 10px; /* Añade espacio entre el título y el menú */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     .header-container {
         flex-direction: row; /* Cambia a diseño horizontal en pantallas grandes */
         justify-content: center; /* Centra horizontalmente */
