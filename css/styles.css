@@ -1,4 +1,3 @@
-/* General */
 body {
     font-family: Arial, sans-serif;
     background: #1c1c1c; /* Fondo oscuro */
@@ -10,43 +9,17 @@ body {
     min-height: 100vh; /* Altura mínima para ocupar toda la pantalla */
 }
 
-/* Header */
 header {
-    background: linear-gradient(90deg, #2c2c2c, #1a1a1a); /* Degradado gris oscuro */
-    color: white;
+    background: #333333; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
     padding: 20px;
     text-align: center;
-    border-bottom: 4px solid #4CAF50; /* Línea verde decorativa */
-}
-
-.header-container {
-    display: flex;
-    flex-direction: column; /* Asegura que los elementos estén uno encima del otro */
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-align: center; /* Centra el texto */
-    gap: 10px; /* Espacio entre el logo y el título */
-    padding: 10px; /* Espaciado interno */
-}
-
-.logo img {
-    width: 100px; /* Tamaño del logo */
-    height: auto; /* Mantiene proporciones */
-    transition: transform 0.3s ease; /* Animación suave */
-}
-
-.logo img:hover {
-    transform: scale(1.1); /* Agranda ligeramente el logo al pasar el ratón */
-}
-
-h1 {
-    font-size: 1.5em; /* Tamaño del título */
-    margin: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -56,104 +29,87 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f4f4f9; /* Blanco */
+    color: #f4f4f9; /* Blanco para enlaces */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #4CAF50; /* Verde brillante al pasar el ratón */
 }
 
-/* Sección Bienvenida */
-.bienvenida {
-    text-align: center;
+main {
     padding: 20px;
-    background: #2c2c2c; /* Fondo oscuro */
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    flex: 1; /* Para empujar el footer hacia abajo */
 }
 
-.bienvenida img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+h2, h3 {
+    color: #4CAF50; /* Verde brillante */
 }
 
-/* Contador */
-.contador {
-    text-align: center;
-    padding: 20px;
-    background: #4f4f4f; /* Fondo gris oscuro */
-    color: #e0e0e0;
-    border-radius: 12px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-    margin: 20px 10px;
-}
-
-.contador h2 {
-    font-size: 24px;
+.dia {
     margin-bottom: 20px;
-    color: #f4f4f9;
+    background: #2c2c2c; /* Fondo oscuro para cada día */
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.countdown {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en dispositivos pequeños */
+.dia ul {
+    padding-left: 20px;
+    list-style: disc;
+    color: #f4f4f9; /* Texto blanco */
 }
 
-.time-segment {
+footer {
+    background: #111111; /* Fondo negro */
+    color: #888888; /* Texto gris claro */
     text-align: center;
-    min-width: 70px; /* Ancho mínimo para cada bloque */
-    flex: 1;
+    padding: 10px;
+    margin-top: 20px;
 }
 
-.time-segment .number {
-    font-size: 48px; /* Tamaño reducido en móviles */
-    font-weight: bold;
-    background: #333;
-    color: #ffffff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2), inset 0px 4px 8px rgba(255, 255, 255, 0.1);
+footer a {
+    color: #4CAF50; /* Verde brillante para enlaces en el footer */
+    text-decoration: none;
 }
 
-.time-segment .label {
-    font-size: 14px;
-    margin-top: 8px;
-    display: block;
-    font-weight: 500;
-    color: #cccccc;
+footer a:hover {
+    text-decoration: underline;
 }
 
-/* Sección CTA (Llamada a la acción) */
+/* Enlace de "Ver Programa Completo" */
 .cta a.btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 30px;
+    padding: 10px 20px;
     background: #4CAF50; /* Fondo verde */
     color: #ffffff; /* Texto blanco */
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
-    border-radius: 8px;
+    border-radius: 5px;
     text-align: center;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .cta a.btn:hover {
-    background: #45a049; /* Verde más oscuro */
-    transform: scale(1.05); /* Agranda ligeramente */
+    background: #45a049; /* Color verde más oscuro al pasar el ratón */
 }
 
-/* Sección Galería */
+.compra {
+    background-color: #2c2c2c; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 15px;
+    text-align: center; /* Centra el texto */
+    border-top: 4px solid #4CAF50; /* Borde verde superior */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.bienvenida img {
+    max-width: 100%; /* Se ajusta al ancho del contenedor */
+    height: auto; /* Mantiene las proporciones */
+    margin-top: 20px; /* Espacio superior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para realzar */
+}
 .galeria {
     text-align: center;
     margin: 20px 0;
@@ -163,7 +119,7 @@ nav ul li a:hover {
 }
 
 .galeria h2 {
-    color: #4CAF50; /* Verde brillante */
+    color: #4CAF50;
     margin-bottom: 20px;
 }
 
@@ -182,43 +138,131 @@ nav ul li a:hover {
 
 .galeria img:hover {
     transform: scale(1.05);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
-
-/* Footer */
-footer {
-    background: #111111; /* Fondo negro */
-    color: #888888; /* Texto gris claro */
+/* Contador */
+.contador {
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 20px;
+    background: #4f4f4f; /* Fondo gris oscuro */
+    color: #e0e0e0; /* Texto claro */
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 600px; /* Ancho máximo */
 }
 
-footer a {
-    color: #4CAF50; /* Verde brillante */
-    text-decoration: none;
+.contador h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f4f4f9;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.countdown {
+    display: flex;
+    justify-content: center; /* Centra los bloques */
+    align-items: center; /* Alinea verticalmente */
+    gap: 10px; /* Espacio reducido entre los bloques */
+    flex-wrap: nowrap; /* Evita que los bloques se muevan a una nueva línea */
 }
 
-/* Media Query para dispositivos móviles */
+.time-segment {
+    text-align: center;
+    flex: 1;
+    max-width: 80px; /* Reduce el ancho máximo */
+}
+
+.time-segment .number {
+    font-size: 36px; /* Tamaño del texto */
+    font-weight: bold;
+    background: #333;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 6px; /* Bordes más compactos */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.time-segment .label {
+    font-size: 12px; /* Texto de las etiquetas */
+    margin-top: 4px;
+    display: block;
+    font-weight: 500;
+    color: #cccccc;
+}
+
+/* Ajustes responsivos */
 @media (max-width: 768px) {
     .countdown {
-        flex-direction: column; /* Coloca los segmentos uno debajo del otro */
-        align-items: center;
-        gap: 15px; /* Espacio reducido entre segmentos */
+        gap: 5px; /* Menor espacio en pantallas medianas */
+        flex-wrap: wrap; /* Permite que los bloques bajen a una nueva línea */
+    }
+
+    .time-segment {
+        max-width: 60px; /* Reduce el ancho */
     }
 
     .time-segment .number {
-        font-size: 36px; /* Tamaño más pequeño para móviles */
-        padding: 10px 15px;
+        font-size: 28px; /* Tamaño más pequeño */
+        padding: 6px 8px;
     }
 
     .time-segment .label {
-        font-size: 12px; /* Etiquetas más pequeñas */
+        font-size: 10px;
     }
+}
+
+@media (max-width: 480px) {
+    .countdown {
+        flex-direction: column; /* Cambia a diseño vertical */
+        align-items: center;
+        gap: 8px; /* Reduce el espacio entre bloques */
+    }
+
+    .time-segment {
+        max-width: unset; /* Elimina límites en vertical */
+    }
+
+    .time-segment .number {
+        font-size: 24px;
+        padding: 5px 6px;
+    }
+
+    .time-segment .label {
+        font-size: 9px;
+    }
+}
+
+header {
+    background: #333333; /* Fondo gris oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.header-container {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén uno encima del otro */
+    flex-wrap: wrap;
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto */
+    gap: 10px; /* Espacio entre el logo y el título */
+    padding: 10px; /* Espaciado interno */
+}
+
+.logo img {
+    width: 80px; /* Tamaño del logo */
+    height: auto; /* Mantiene proporciones */
+}
+
+h1 {
+    font-size: 1.2em; /* Ajusta el tamaño del título en móviles */
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px; /* Añade espacio entre el título y el menú */
 }
 
 @media (min-width: 1000px) {
@@ -244,6 +288,27 @@ footer a:hover {
 }
 
 
+
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4f4f9; /* Blanco */
+    text-decoration: none;
+    font-weight: bold;
+}
 
 
 
