@@ -299,6 +299,70 @@ footer a:hover {
     }
 }
 
+/* Merchandising */
+main h2{
+    text-align: center;
+}
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Diseño responsivo con tarjetas */
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px; /* Ancho máximo */
+}
+
+.productos article {
+    background: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.productos article:hover {
+    transform: scale(1.03); /* Efecto de agrandamiento al pasar el ratón */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.productos h3 {
+    font-size: 1.5em;
+    color: #818a82; /* Verde brillante */
+    margin-bottom: 10px;
+}
+
+.productos p {
+    font-size: 1.2em;
+    color: #555555; /* Texto gris oscuro */
+}
+
+/* Nota */
+.compra {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    color: #333333; /* Texto oscuro */
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #838984; /* Línea decorativa verde */
+    margin-top: 20px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.compra strong {
+    color: #8d918e; /* Destaca la palabra "Nota" */
+}
+
+/* Footer */
+footer {
+    background: #333333; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
 
 
 
