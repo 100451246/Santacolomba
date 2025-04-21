@@ -364,10 +364,13 @@ footer {
     font-size: 0.9em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     nav ul {
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 400px; /* Limita el ancho para que no quede pegado al borde */
+        padding: 0 10px; /* Añade espacio a los lados */
     }
 
     nav ul li {
@@ -385,7 +388,6 @@ footer {
         order: 2; /* Segunda fila: Merchandising y Agosto */
     }
 }
-
 
 
 
