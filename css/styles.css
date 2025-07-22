@@ -368,6 +368,29 @@ footer {
     margin-top: 20px;
     font-size: 0.9em;
 }
+/* Video */
+.video {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.video h2 {
+    font-size: 1.8em;
+    color: #444444;
+    margin-bottom: 15px;
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 @media (max-width: 600px) {
     nav ul {
