@@ -369,7 +369,7 @@ footer {
     font-size: 0.9em;
 }
 /* Video */
-.video {
+.video, .pasacalles {
     margin: 30px auto;
     max-width: 800px;
     padding: 20px;
