@@ -385,6 +385,12 @@ footer {
     margin-bottom: 15px;
 }
 
+.pasacalles h2 {
+    font-size: 1.8em;
+    color: #444444;
+    margin-bottom: 15px;
+}
+
 .video video {
     width: 100%;
     height: auto;
